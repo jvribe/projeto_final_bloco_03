@@ -1,4 +1,4 @@
-import { FacebookLogo, InstagramLogo, LinkedinLogo, Prescription } from '@phosphor-icons/react'
+import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,13 +6,14 @@ function Footer() {
   return (
     <footer className="w-full bg-slate-900 text-slate-300 border-t border-slate-800">
       <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
-        
-        {/* Coluna Logo e Descrição */}
+       
         <div className="md:col-span-1 flex flex-col gap-4">
-          <div className='flex items-center gap-2'>
-            <div className="p-2 rounded-lg bg-cyan-600 text-white">
-              <Prescription size={20} weight="duotone" />
-            </div>
+          <div className='flex items-center gap-3'>
+            <img
+              src="/favicon.svg"
+              alt="Farmácia Dev logo"
+              className="h-8 w-8"
+            />
             <h1 className='text-xl font-bold text-white tracking-tighter'>
               Farmácia<span className='text-cyan-400'>Dev</span>
             </h1>
@@ -22,7 +23,7 @@ function Footer() {
           </p>
         </div>
 
-        {/* Colunas de Links (Placeholders) */}
+        
         <div className="flex flex-col gap-3">
           <h4 className="font-semibold text-slate-100 mb-2">Institucional</h4>
           <a href="#" className="text-sm hover:text-cyan-400 transition-colors font-light">Sobre Nós</a>
@@ -55,7 +56,7 @@ function Footer() {
 
       </div>
 
-      {/* Barra de Direitos Autorais */}
+     
       <div className="w-full bg-slate-950/50 py-4 border-t border-slate-800/50">
         <div className="container mx-auto px-6 text-center text-xs text-slate-500 font-light">
           &copy; {currentYear} Farmácia Dev Tecnologia em Saúde Ltda. Todos os direitos reservados. Generation Brasil - Bloco 3.

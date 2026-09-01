@@ -5,7 +5,7 @@ function Home() {
     <div className="bg-slate-50">
       
       
-      <div className="relative bg-gradient-to-br from-cyan-600 to-cyan-800 text-white flex justify-center items-center py-24 px-6 overflow-hidden">
+      <div className="relative bg-linear-to-br from-cyan-600 to-cyan-800 text-white flex justify-center items-center py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>

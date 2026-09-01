@@ -1,4 +1,4 @@
-import { ShoppingCart, User, MagnifyingGlass, Prescription } from '@phosphor-icons/react'
+import { ShoppingCart, User, MagnifyingGlass } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -6,11 +6,12 @@ function Navbar() {
     <div className='w-full bg-white/95 backdrop-blur-sm sticky top-0 z-50 py-3 border-b border-slate-100 shadow-sm'>
       <div className="container mx-auto flex justify-between items-center px-6">
         
-        {/* Logo direcionando para /home */}
-        <Link to='/home' className='flex items-center gap-2 group'>
-          <div className="p-2.5 rounded-xl bg-cyan-500 text-white shadow-md group-hover:bg-cyan-600 transition-colors">
-            <Prescription size={24} weight="duotone" />
-          </div>
+        <Link to='/home' className='flex items-center gap-3 group'>
+          <img
+            src="/favicon.svg"
+            alt="Farmácia Dev logo"
+            className="h-10 w-10   shadow-md group-hover:scale-105 transition-transform"
+          />
           <h1 className='text-2xl font-extrabold text-slate-900 tracking-tighter'>
             Farmácia<span className='text-cyan-600'>Dev</span>
           </h1>
@@ -28,9 +29,11 @@ function Navbar() {
 
         {/* Menu e Links */}
         <div className='flex gap-6 items-center'>
-          <nav className='flex gap-6 text-sm font-medium text-slate-700'>
-            <Link to='/home' className='hover:text-cyan-600 transition-colors'>Home</Link>
-          </nav>
+         <nav className='flex gap-6 text-sm font-medium text-slate-700'>
+        <Link to='/home' className='hover:text-cyan-600 transition-colors'>Home</Link>
+        <Link to='/categorias' className='hover:text-cyan-600 transition-colors'>Categorias</Link>
+        <Link to='/cadastrarcategoria' className='hover:text-cyan-600 transition-colors'>Cadastrar Categoria</Link>
+        </nav>
           
           <div className='w-px h-6 bg-slate-200'></div>
 
